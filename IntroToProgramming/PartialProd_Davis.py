@@ -9,7 +9,7 @@ Created on Tue Feb  5 14:29:39 2019
 import numpy as np
 from functools import reduce
 
-n=150
+n=1000
 
 
 #%% First sequence
@@ -23,6 +23,8 @@ for ii in range(len(p1)):
 print('First 15 in Sequence 1:',array_p1[:15])
 print('Last 15 in Sequence 1:',array_p1[-15:])
 
+#Converge to 0.66666667
+
 #%% Second sequence
 p2=[]
 array_p2=np.zeros((n))
@@ -34,18 +36,20 @@ for jj in range(len(p2)):
 print('First 15 in Sequence 2:',array_p2[:15])
 print('Last 15 in Sequence 2:',array_p2[-15:])
 
-#Approaches 0??
+#Converges to 0
 
 #%% Third sequence -- my creation
 p3=[]
-array3=np.zeros((n))
+array_p3=np.zeros((n))
 
 for k in range(1,n+1):
-    p3.append################3
+    p3.append((np.sin(k))/(np.cos(k)))
 for kk in range(len(p3)):
     array_p3[kk]=reduce(lambda a,b: a*b, (p3[0:kk+1]))
 print('First 15 in Sequence 3:',array_p3[:15])
 print('Last 15 in Sequence 3:',array_p3[-15:])
+
+#Diverges
 
 
 
