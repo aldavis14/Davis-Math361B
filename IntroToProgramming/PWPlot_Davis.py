@@ -26,7 +26,7 @@ def f(x):
             y.append(np.sin(i*np.pi)+3)
         else:
             y.append(3*np.sqrt(i-2)+4)
-    plt.scatter(x_values,y)
+    return y
 
 
-f(x_values)
+plt.scatter(x_values, f(x_values))
