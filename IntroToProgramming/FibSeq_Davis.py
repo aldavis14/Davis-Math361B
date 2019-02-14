@@ -18,8 +18,8 @@ def fib(f0,f1,n):
 fib(1,2,12)
 #%% Cassini's Identity
 N=10
-first=0
-second=1
+first=1
+second=2
 
 seq=fib(first,second,N+1)
 for i in range(N):
