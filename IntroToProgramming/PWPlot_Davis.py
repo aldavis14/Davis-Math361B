@@ -15,7 +15,7 @@ x_values = np.linspace(-3, 3, N)
 
 def f(x):
     y=[]
-    for i in x:
+    for i in x_values:
         if (i<-2):
             y.append(-3*((i+2)**2)+1)
         elif (i>=-2 and i<-1):
@@ -30,3 +30,4 @@ def f(x):
 
 
 plt.scatter(x_values, f(x_values))
+
