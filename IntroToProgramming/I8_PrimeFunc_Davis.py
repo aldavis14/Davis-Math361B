@@ -22,7 +22,7 @@ def prime_check(x):
 prime_check(55)
 
 #%% determine the nth prime number
-n=5
+n=14
 
 primes=[]
 for ii in range(1,1000):
