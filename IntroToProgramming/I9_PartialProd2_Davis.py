@@ -7,11 +7,11 @@ Created on Fri Feb 22 12:46:42 2019
 """
 
 # Defining things
-a_n = lambda n: 1+((n**2+2*n+1)/(n**3+4))
+a_n = lambda n: 1+((n)/(n**2*4))
 b=0.5  #b>0 is a constant
 b_n = lambda n: 1+b**n
 
-N=1000  #total number of terms in the partial product sequence 
+N=2000  #total number of terms in the partial product sequence 
 
 #%% First Partial Product
 partial_prod1=[]
