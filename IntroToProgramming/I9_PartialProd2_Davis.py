@@ -7,13 +7,11 @@ Created on Fri Feb 22 12:46:42 2019
 """
 
 # Defining things
-f=n**2+2*n+1  #f and g are polynomials
-g=n**3+4
-a_n = lambda n: 1+(f/g)
+a_n = lambda n: 1+((n**2+2*n+1)/(n**3+4))
 b=0.5  #b>0 is a constant
 b_n = lambda n: 1+b**n
 
-N=100  #total number of terms in the partial product sequence 
+N=1000  #total number of terms in the partial product sequence 
 
 #%% First Partial Product
 partial_prod1=[]
