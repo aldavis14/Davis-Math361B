@@ -11,10 +11,11 @@ import numpy as np
 #%% Create the triples
 triples = np.zeros([0,4])
 for i in range(1,500):
-    for j in range(1,500):
-        for k in range(1,500):
+    for j in range(i,500):
+        for k in range(j,500):
             if i**2+j**2 == k**2 and i<j<k:
                 triples = np.vstack( [triples, np.array([i,j,k,i+j+k])])
+                
 
 #%% Find the triple for which a+b+c=1026
 print(triples[np.where(triples[:,3]==1026)],'is the triple that we wanted to find.')
