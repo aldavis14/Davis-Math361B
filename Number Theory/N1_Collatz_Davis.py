@@ -26,4 +26,7 @@ def collatz(a0, N):
 #%% Try examples
 collatz(6,5)
 
+#%%
+collatz(729, 110)
+
 
