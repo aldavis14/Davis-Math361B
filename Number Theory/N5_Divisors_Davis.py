@@ -9,10 +9,9 @@ Created on Tue Mar 26 17:50:43 2019
 # Define the function.
 def divisors(n):
     divisors = []
-    for m in range(1, n):
-        for k in range(1, n+1):
-            if m*k==n:
-                divisors.append(m)
+    for i in range(1,n):
+        if n%i==0:
+            divisors.append(i)
     print(divisors)
 
 #%% Print out divisors of a number.
