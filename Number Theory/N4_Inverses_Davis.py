@@ -7,7 +7,7 @@ Created on Fri Mar 22 11:42:30 2019
 """
 
 # input variable
-m = 5
+m = 29
 
 # find which elements have multiplicative inverses
 inverses=[]
@@ -17,3 +17,5 @@ for i in range(0,m):
             inverses.append(i)
 print('Elements that have a multiplicative inverse: ', inverses)
 print('How many elements?', len(inverses))
+
+#%%
